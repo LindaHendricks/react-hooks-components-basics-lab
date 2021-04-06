@@ -15,13 +15,34 @@ function Home() {
     </div>
   );
 }
+function About() {
+  return (
+    <div id="about">
+      <h1>About</h1>
+    </div>
+  );
+}
+
+
+function Tweet() {
+  return (
+    <div className="tweet">
+      <img src="http://twitter.com/some-avatar.png" className="tweet__avatar" />
+      <div className="tweet__body">
+        <p>We are writing this tweet in JSX. Holy moly!</p>
+      </div>
+    </div>
+  );
+}
+
 
 function App() {
   return (
     <div>
       <NavBar />
-      {/* add the <Home> component here */}
-      {/* write an <About> component here */}
+      <Home />
+      <About />
+      <Tweet />
     </div>
   );
 }
